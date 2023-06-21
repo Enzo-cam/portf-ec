@@ -1,4 +1,4 @@
-import { Image, Box, Text, Button, Tooltip } from "@chakra-ui/react";
+import { Image, Box, Text, Button, Tooltip, Link } from "@chakra-ui/react";
 import { SiQuicklook } from "react-icons/si";
 
 const Enzocard = () => {
@@ -8,6 +8,7 @@ const Enzocard = () => {
       flexDirection={{ base: "column", md: "row" }}
       gap={5}
       alignItems={{ base: "center", md: "flex-start" }}
+      mb={6}
     >
       <Image
         border="2px black solid"
@@ -25,20 +26,21 @@ const Enzocard = () => {
         </Text>
         <Box display="flex" alignItems="center" justifyContent={{ base: "center", md: "left" }} gap={4} my={2}>
           <Tooltip
-            placement="top"
+            placement="bottom"
             hasArrow
             backgroundColor="#5E503F"
             label="Looking for a job"
             fontSize="sm"
-            onFocus
           >
             <Text backgroundColor="#C6AC8F" rounded="xl" p={2}>
               <SiQuicklook fontSize="1.3rem" />
             </Text>
           </Tooltip>
-          <Button backgroundColor="#5E503F" color="white" _hover="none">
-            Resume
-          </Button>
+          <Link href="/Cv-EnzoCamEN.pdf" download="CV-EnzocamEN">
+            <Button backgroundColor="#5E503F"color="white" variant='solid' _hover={{bg: "#5E503F"}}>
+              Resume
+            </Button>
+          </Link>
         </Box>
       </Box>
     </Box>
