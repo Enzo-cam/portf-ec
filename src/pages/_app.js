@@ -11,7 +11,7 @@ const theme = extendTheme({
 export default function App({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
-      <Container maxW="75%">
+      <Container maxW={{ base: "100%", sm:"50%", md: "43%" }}>
         <Component {...pageProps} />
       </Container>
     </ChakraProvider>
