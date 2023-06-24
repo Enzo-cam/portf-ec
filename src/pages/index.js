@@ -22,7 +22,7 @@ const projects = [
 export default function Home() {
   return (
     <>
-      <Container maxW={{ base: "100%", sm:"50%", md: "43%" }}>
+      <Container maxW={{ base: "100%", sm:"50%", md: "46%" }}>
         <Layout>
           <Enzocard />
           <Divider />
