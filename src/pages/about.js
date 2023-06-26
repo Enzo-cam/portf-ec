@@ -8,9 +8,34 @@ import {
   Divider,
 } from "@chakra-ui/react";
 import Layout from "../../Components/Layout";
-import { Experience } from "../../Components/Experience";
 import { GiSpaceship } from "react-icons/gi";
 import { IoIosCodeWorking } from "react-icons/io";
+import ExperienceList from "../../Components/ExperienceList";
+
+const experience = [
+  {
+      titleJob: "Frontend Developer",
+      nameComp: "Risk Of Dev",
+      date: "June 2023 - Current",
+      responsabilities: [
+          "Administration dashboard with React and NextJs for the management of properties, tokens, and menu for user and admin.",
+          "Creation of reusable components using good coding practices",
+          "Implemented designs created from scratch into the web interface using ChakraUI.",
+          "Successfully developed software that allow user to buy properties by tokens and see what they have in their wallet.Improving the better user experience and avoided inconsistencies in the information.",
+      ],
+  },
+  {
+      titleJob: "Frontend Developer",
+      nameComp: "TOB - Group Solutions",
+      date: "March 2023 - June 2023",
+      responsabilities: [
+          "Administration dashboard with React and NextJs for the management of properties, tokens, and menu for user and admin.",
+          "Creation of reusable components using good coding practices",
+          "Implemented designs created from scratch into the web interface using ChakraUI.",
+          "Successfully developed software that allow user to buy properties by tokens and see what they have in their wallet.Improving the better user experience and avoided inconsistencies in the information.",
+      ],
+  }
+];
 
 const About = () => {
   return (
@@ -47,31 +72,9 @@ const About = () => {
               </Heading>
             </Box>
 
-            <Experience
-              titleJob="Frontend Developer"
-              nameCompany="TOB-Group Solutions"
-              date="March 2023 — June 2023"
-            >
-              <UnorderedList spacing={2} ml={6} color="gray.700" fontSize="lg">
-                <ListItem>
-                  Administration dashboard with React and NextJs for the
-                  management of properties, tokens, and menu for user and admin.
-                </ListItem>
-                <ListItem>
-                  Creation of reusable components using good coding practices
-                </ListItem>
-                <ListItem>
-                  Implemented designs created from scratch into the web
-                  interface using ChakraUI.
-                </ListItem>
-                <ListItem>
-                  Successfully developed software that allow user to buy
-                  properties by tokens and see what they have in their
-                  wallet.Improving the better user experience and avoided
-                  inconsistencies in the information.
-                </ListItem>
-              </UnorderedList>
-            </Experience>
+            <ExperienceList 
+              experience={experience}
+            />
           </Box>
         </Layout>
       </Container>
