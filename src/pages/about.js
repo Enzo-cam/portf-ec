@@ -2,8 +2,6 @@ import {
   Box,
   Heading,
   Text,
-  UnorderedList,
-  ListItem,
   Container,
   Divider,
 } from "@chakra-ui/react";
@@ -14,27 +12,25 @@ import ExperienceList from "../../Components/ExperienceList";
 
 const experience = [
   {
-      titleJob: "Frontend Developer",
-      nameComp: "Risk Of Dev",
-      date: "June 2023 - Current",
-      responsabilities: [
-          "Administration dashboard with React and NextJs for the management of properties, tokens, and menu for user and admin.",
-          "Creation of reusable components using good coding practices",
-          "Implemented designs created from scratch into the web interface using ChakraUI.",
-          "Successfully developed software that allow user to buy properties by tokens and see what they have in their wallet.Improving the better user experience and avoided inconsistencies in the information.",
-      ],
+    titleJob: "Frontend Developer",
+    nameComp: "Risk Of Dev",
+    date: "June 2023 - Current",
+    responsabilities: [
+      "Administration dashboard with React and NextJs for the management of properties, tokens, and menu for user and admin.",
+      "Creation of reusable components using good coding practices",
+    ],
   },
   {
-      titleJob: "Frontend Developer",
-      nameComp: "TOB - Group Solutions",
-      date: "March 2023 - June 2023",
-      responsabilities: [
-          "Administration dashboard with React and NextJs for the management of properties, tokens, and menu for user and admin.",
-          "Creation of reusable components using good coding practices",
-          "Implemented designs created from scratch into the web interface using ChakraUI.",
-          "Successfully developed software that allow user to buy properties by tokens and see what they have in their wallet.Improving the better user experience and avoided inconsistencies in the information.",
-      ],
-  }
+    titleJob: "Frontend Developer",
+    nameComp: "TOB - Group Solutions",
+    date: "March 2023 - June 2023",
+    responsabilities: [
+      "Administration dashboard with React and NextJs for the management of properties, tokens, and menu for user and admin.",
+      "Creation of reusable components using good coding practices",
+      "Implemented designs created from scratch into the web interface using ChakraUI.",
+      "Successfully developed software that allow user to buy properties by tokens and see what they have in their wallet.Improving the better user experience and avoided inconsistencies in the information.",
+    ],
+  },
 ];
 
 const About = () => {
@@ -72,9 +68,7 @@ const About = () => {
               </Heading>
             </Box>
 
-            <ExperienceList 
-              experience={experience}
-            />
+            <ExperienceList experience={experience} />
           </Box>
         </Layout>
       </Container>
